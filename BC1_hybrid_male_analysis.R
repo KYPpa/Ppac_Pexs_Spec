@@ -537,7 +537,7 @@ write.csv(gt.data,file="Genotype_BC1_male_RQTL_2.csv",row.names=F,quote=F)
 mapthis<-read.cross("csv",file="Genotype_BC1_male_RQTL_2.csv",estimate.map=F,crosstype="bc")
 gddata <-est.map(mapthis, error.prob=0.001, verbose=FALSE)
 mapdata<-replace.map(mapthis,gddata)
-save(mapdata,file="mapdata_BC1_hybrid_male.Robj")
+save(mapdata,file="Dataset/mapdata_BC1_hybrid_male.Robj")
 
 ###### Marey map ######
 
